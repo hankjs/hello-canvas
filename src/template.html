@@ -9,7 +9,14 @@
 
 <body>
     <div id="app" class="ickt"></div>
-    <script  data-main="/src/out/template.js" src="/node_modules/requirejs/require.js"></script>
+    <script>
+        var requirejs = {
+            paths: {
+                "@": '/src',
+            }
+        }
+    </script>
+    <script data-main="/src/out/template.js" src="/node_modules/requirejs/require.js"></script>
 </body>
 
 </html>
