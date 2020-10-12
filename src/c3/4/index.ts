@@ -15,4 +15,4 @@ cxt.arc(120, 80, 50, 0, 360 * Math.PI / 180, true);
 cxt.closePath();
 //描边
 cxt.fillStyle = "#9966FF";
-cxt.fill();;
+cxt.fill();
