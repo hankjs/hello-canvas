@@ -7,10 +7,9 @@ const cxt = cnv.getContext("2d") as CanvasRenderingContext2D;
   cxt.fillStyle = "HotPink";
   cxt.fillRect(30, 30, 50, 50);
 
-  var degree = 0;
+  var degree = 0.1;
   setInterval(function () {
     cxt.rotate(degree * Math.PI / 180);
     cxt.fillRect(30, 30, 50, 50);
-    degree++;
   }, 100);
 }());
