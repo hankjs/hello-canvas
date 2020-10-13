@@ -50,6 +50,9 @@
 │  │ ├─10-2                     # beginPath、closePath
 │  │ └─10-3                     # isPointInPath
 │  │ 
+│  ├─c11                      # Canvas状态
+│  │ ├─11-2                     # clip
+│  │ 
 │  ├─utils                   # 公共函数
 │  ├─css                     # 公共样式
 │  ├─css                     # 公共样式
