@@ -4,6 +4,8 @@ const cnv = dom("canvas") as HTMLCanvasElement;
 const cxt = cnv.getContext("2d") as CanvasRenderingContext2D;
 
 ; (async function () {
+  // 反转效果，也叫“颜色反转”，是指图片颜色颠倒效果。
+  // 实现算法是：红、绿、蓝这三个通道的像素取各自的相反值，也就是（255-原值）。
   var image = new Image();
   image.src = "/src/images/1.jpg";
 
