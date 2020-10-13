@@ -22,6 +22,11 @@ const cxt = cnv.getContext("2d") as CanvasRenderingContext2D;
   //   b  d  f
   //   0  0  1
 
+  // transform()方法与translate()、scale()、rotate()这三种方法的关系。
+  // （1）translate(e,f)等价于transform(1,0,0,1,e,f)。
+  // （2）scale(a,d)等价于transform(a,0,0,d,0,0)。
+  // （3）rotate(θ)等价于transform(cosθ,sinθ,-sinθ,cosθ,0,0)。
+
   //绘制初始图形
   cxt.fillStyle = "HotPink";
   cxt.fillRect(30, 30, 50, 50);
