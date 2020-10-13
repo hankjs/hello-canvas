@@ -47,7 +47,7 @@
 │  │ └─9-3                     # 阴影
 │  │ 
 │  ├─c10                      # Canvas路径
-│  │ ├─10-2                     # beginPath
+│  │ ├─10-2                     # beginPath、closePath
 │  │ 
 │  ├─utils                   # 公共函数
 │  ├─css                     # 公共样式
