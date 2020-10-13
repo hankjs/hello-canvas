@@ -1,4 +1,5 @@
 import { dom } from "@/utils/dom";
+import { createRoundedRect } from "@/utils/createRoundedRect";
 
 const cnv = dom("canvas") as HTMLCanvasElement;
 const cxt = cnv.getContext("2d") as CanvasRenderingContext2D;

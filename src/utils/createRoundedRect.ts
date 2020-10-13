@@ -4,7 +4,14 @@
  * r：表示圆角半径
  * offsetX、offsetY：分别表示左上角顶点坐标
  */
-function createRoundedRect(cxt: CanvasRenderingContext2D, width: number, height: number, r: number, offsetX: number, offsetY: number): void {
+export function createRoundedRect(
+  cxt: CanvasRenderingContext2D,
+  width: number,
+  height: number,
+  r: number,
+  offsetX: number,
+  offsetY: number
+): void {
   cxt.beginPath();
   cxt.moveTo(offsetX + r, offsetY);
   cxt.lineTo(offsetX + width - r, offsetY);
