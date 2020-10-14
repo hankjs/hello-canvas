@@ -51,3 +51,14 @@ export function getKey() {
   }, false);
   return key;
 }
+
+export const animationFrame = (
+  window.requestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.mozRequestAnimationFrame ||
+  window.msRequestAnimationFrame ||
+  window.oRequestAnimationFrame ||
+  function (callback) {
+    return window.setTimeout(callback, 1000 / 60);
+  }
+).bind(window);
