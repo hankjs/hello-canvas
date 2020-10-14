@@ -46,13 +46,16 @@
 │  │ ├─9-2                     # 径向渐变
 │  │ └─9-3                     # 阴影
 │  │ 
-│  ├─c10                      # Canvas路径
-│  │ ├─10-2                     # beginPath、closePath
-│  │ └─10-3                     # isPointInPath
+│  ├─c10                     # Canvas路径
+│  │ ├─10-2                    # beginPath、closePath
+│  │ └─10-3                    # isPointInPath
 │  │ 
-│  ├─c11                      # Canvas状态
-│  │ ├─11-2                     # clip
-│  │ ├─11-3                     # save()方法和restore()方法
+│  ├─c11                     # Canvas状态
+│  │ ├─11-2                    # clip
+│  │ └─11-3                    # save()方法和restore()方法
+│  │ 
+│  ├─c12                     # 其他应用
+│  │ ├─12-1                    # Canvas对象
 │  │ 
 │  ├─utils                   # 公共函数
 │  ├─css                     # 公共样式
