@@ -67,6 +67,17 @@ const cxt2 = cnv2.getContext("2d") as CanvasRenderingContext2D;
     // 如果不使用restore()，即便使用clearRect()方法清空画布，
     // 后面绘制的所有图形或图片也都会限制在这个剪切区域内。
     // cxt2.restore();
+
+    // 总结:
+    // （1）save()方法保存的状态包括三个，
+    //     即剪切状态、变形状态（一般指变换矩阵）和绘图状态。
+    // （2）save()不能保存路径状态，如果想要开始新的路径，
+    //     只有beginPath()一个方法。
+    // （3）save()只能保存“状态”，不能保存“图形”。
+    //     也就是说，如果想要用save()保存一个圆形，这是不可能的。
+    //     由于Canvas只有当前一个上下文环境，
+    //     如果想要恢复图形，就只能清空画布再重绘。
+
     //清空画布
     cxt2.clearRect(0, 0, cnv.width, cnv.height);
     //绘制一张新图片

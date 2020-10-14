@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/src/css/index.css">
+    <title>Web前端开发精品课——HTML5 Canvas开发详解</title>
+</head>
+
+<body>
+    <canvas class="border" id="canvas" width="200" height="150"></canvas>
+    <p id="p">不使用restore</p>
+
+    <br>
+    <canvas class="border" id="canvas2" width="200" height="150"></canvas>
+    <p>使用restore</p>
+    
+    <script>
+        var requirejs = {
+            paths: {
+                "@": '/src/out',
+            }
+        }
+    </script>
+    <script  data-main="/src/out/c11/11-3-3/index.js" src="/node_modules/requirejs/require.js"></script>
+</body>
+
+</html>
