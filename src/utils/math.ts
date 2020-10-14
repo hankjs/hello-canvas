@@ -1,0 +1,1 @@
+export const angle = (x: number) => (x * Math.PI / 180);
