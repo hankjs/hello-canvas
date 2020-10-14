@@ -34,3 +34,20 @@ export function getMouse(element: HTMLElement) {
   //返回值为mouse对象
   return mouse;
 }
+export function getKey() {
+  var key: any = {};
+  window.addEventListener("keydown", function (e: KeyboardEvent) {
+    if (e.key === "ArrowUp" || e.key == "w") {
+      key.direction = "up";
+    } else if (e.key === "ArrowRight" || e.key === "d") {
+      key.direction = "right";
+    } else if (e.key === "down" || e.key === "s") {
+      key.direction = "ArrowDown";
+    } else if (e.key === "ArrowLeft" || e.key === "a") {
+      key.direction = "left";
+    } else {
+      key.direction = "";
+    }
+  }, false);
+  return key;
+}
