@@ -1,5 +1,5 @@
-export function dom(id: string): HTMLCanvasElement {
-  return document.getElementById(id) as HTMLCanvasElement;
+export function dom(id: string): HTMLElement {
+  return document.getElementById(id) as HTMLElement;
 }
 
 export function getMouse(element: HTMLElement) {
