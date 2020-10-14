@@ -1,4 +1,4 @@
-import { Arrow } from "@/objects/Arraw";
+import { Arrow } from "@/objects/Arrow";
 import { animationFrame, dom, getMouse } from "@/utils/dom";
 
 const cnv = dom("canvas") as HTMLCanvasElement;
