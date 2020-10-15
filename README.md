@@ -74,7 +74,7 @@
 │  │ 
 │  ├─utils                   # 公共函数
 │  ├─css                     # 公共样式
-│  ├─css                     # 公共样式
+│  ├─objects                 # 工具类
 │  │ 
 │  ├─template.html           # html模版
 │  ├─template.ts             # js模版
