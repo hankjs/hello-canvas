@@ -3,6 +3,10 @@ export class Ball {
   public x: number;
   /** 小球半径，默认值为12 */
   public y: number;
+  /** x速度 */
+  public vx: number = 0;
+  /** y速度 */
+  public vy: number = 0;
   /** 小球半径，默认值为12 */
   public radius: number;
   /** 颜色，默认值为"#6699FF" */
