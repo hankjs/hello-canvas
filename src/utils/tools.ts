@@ -15,3 +15,14 @@ export function checkRect(rectA: any, rectB: any) {
     rectA.y + rectA.height < rectB.y ||
     rectB.y + rectB.height < rectA.y);
 }
+export function checkCircle(circleB: any, circleA: any) {
+  var dx = circleB.x - circleA.x;
+  var dy = circleB.y - circleA.y;
+  var distance = Math.sqrt(dx * dx + dy * dy);
+  if (distance < (circleA.radius + circleB.radius)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
