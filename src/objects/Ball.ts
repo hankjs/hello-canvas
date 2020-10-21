@@ -28,6 +28,16 @@ export class Ball {
     this.color = color;
   }
 
+  getRect() {
+    var rect = {
+         x: this.x - this.radius,
+         y: this.y - this.radius,
+         width: this.radius * 2,
+         height: this.radius * 2
+    };
+    return rect;
+}
+
   stroke(cxt: CanvasRenderingContext2D) {
     cxt.save();
     cxt.scale(this.scaleX, this.scaleY);

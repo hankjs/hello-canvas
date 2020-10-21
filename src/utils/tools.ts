@@ -8,3 +8,10 @@ export function getRandomColor() {
   }
   return res;
 }
+
+export function checkRect(rectA: any, rectB: any) {
+  return !(rectA.x + rectA.width < rectB.x ||
+    rectB.x + rectB.width < rectA.x ||
+    rectA.y + rectA.height < rectB.y ||
+    rectB.y + rectB.height < rectA.y);
+}
