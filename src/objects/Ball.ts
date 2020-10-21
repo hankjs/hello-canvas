@@ -30,13 +30,24 @@ export class Ball {
 
   getRect() {
     var rect = {
-         x: this.x - this.radius,
-         y: this.y - this.radius,
-         width: this.radius * 2,
-         height: this.radius * 2
+      x: this.x - this.radius,
+      y: this.y - this.radius,
+      width: this.radius * 2,
+      height: this.radius * 2
     };
     return rect;
-}
+  }
+
+  checkMouse(mouse: MouseEvent) {
+    var dx = mouse.x - this.x;
+    var dy = mouse.y - this.y;
+    var distance = Math.sqrt(dx * dx + dy * dy);
+    if (distance < this.radius) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   stroke(cxt: CanvasRenderingContext2D) {
     cxt.save();
