@@ -7,20 +7,17 @@ const cxt = cnv.getContext("2d") as CanvasRenderingContext2D;
 const txt = tools.dom("p") as HTMLParagraphElement;
 
 ; (async function () {
-
-  var ball = new Ball(0, 0);
-  //定义终点的x轴坐标和y轴坐标
-  var targetX = cnv.width * (3 / 4);
-  var targetY = cnv.height * (1 / 2);
-  //定义缓动系数
+  //初始化数据
+  var ball = new Ball(cnv.width / 2, cnv.height / 2, 15, "#FF6699");
+  var mouse = tools.getMouse(cnv);
   var easing = 0.05;
 
   (function frame() {
     window.requestAnimationFrame(frame);
     cxt.clearRect(0, 0, cnv.width, cnv.height);
 
-    var vx = (targetX - ball.x) * easing;
-    var vy = (targetY - ball.y) * easing;
+    var vx = (mouse.x - ball.x) * easing;
+    var vy = (mouse.y - ball.y) * easing;
     ball.x += vx;
     ball.y += vy;
 
