@@ -35,7 +35,7 @@ export class Box {
     cxt.closePath();
     cxt.stroke();
     cxt.restore();
-  },
+  }
   //绘制"填充"矩形
   fill(cxt: CanvasRenderingContext2D) {
     cxt.save();
