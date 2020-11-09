@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/src/css/index.css">
+    <title>Web前端开发精品课——HTML5 Canvas开发详解</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <p id="p"></p>
+    
+    <script>
+        var requirejs = {
+            paths: {
+                "@": '/src/out',
+            }
+        }
+    </script>
+    <script src="/src/assets/Box2D.min.js"></script>
+    <script data-main="/src/out/c19/19-2-1/index.js" src="/node_modules/requirejs/require.js"></script>
+</body>
+
+</html>
