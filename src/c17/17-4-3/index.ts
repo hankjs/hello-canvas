@@ -64,7 +64,7 @@ const txt = tools.dom("p") as HTMLParagraphElement;
   }
 
   (function drawFrame() {
-    window.requestAnimationFrame(drawFrame, cnv);
+    window.requestAnimationFrame(drawFrame);
     cxt.clearRect(0, 0, cnv.width, cnv.height);
 
     if (isMouseDown) {
