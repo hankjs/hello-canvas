@@ -1,4 +1,4 @@
-边界环绕# hello-canvas
+# hello-canvas
 
 #### 介绍
 
